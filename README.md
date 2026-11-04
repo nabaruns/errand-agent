@@ -81,12 +81,13 @@ docs/              design note, eval table, saved traces
 
 | Item | Where |
 |---|---|
-| Design note | [docs/DESIGN.md](docs/DESIGN.md) |
+| Submission checklist | [SUBMISSION.md](SUBMISSION.md) |
+| Design note | [docs/DESIGN.md](docs/DESIGN.md), one-page PDF: [docs/DESIGN.pdf](docs/DESIGN.pdf) |
 | Eval table (generated) | [docs/eval/eval_table.md](docs/eval/eval_table.md), raw: `docs/eval/results.json` |
-| Bugs found while building | [BUGS.md](BUGS.md) |
+| Bugs found while building (three featured, three more) | [BUGS.md](BUGS.md) |
 | Timeout-after-success trace (live Claude run) | [docs/traces/timeout_after_success/](docs/traces/timeout_after_success/), annotated in the design note |
 | Recorded live conversation replayed offline | `evals/recordings/plumber_timeout_live.json` (scenario S30) |
-| Demo video script | [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) |
+| Demo video | [youtu.be/Gp3-VMEX4_w](https://youtu.be/Gp3-VMEX4_w), script in [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) |
 | Original plan | [PLAN.md](PLAN.md) |
 
 ## Re-recording the live scenario

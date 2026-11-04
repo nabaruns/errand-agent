@@ -8,7 +8,6 @@ from __future__ import annotations
 import json
 import sys
 import tempfile
-import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
@@ -30,11 +29,9 @@ class Result:
     invariant_violations: list
     model_calls: int
     tool_calls: int
-    seconds: float
 
 
 def run_one(spec: Spec) -> Result:
-    started = time.perf_counter()
     with tempfile.TemporaryDirectory(prefix=f"eval-{spec.id}-") as tmp:
         env = build_env(spec, Path(tmp))
         try:
@@ -52,8 +49,7 @@ def run_one(spec: Spec) -> Result:
         notes = f"{len(env.checks)} checks + invariants held"
     return Result(spec.id, spec.name, spec.category, spec.expected, actual, passed, notes,
                   [{"label": label, "ok": ok} for label, ok in env.checks], violations,
-                  len(env.events("model_call")), len(env.events("tool_call")),
-                  round(time.perf_counter() - started, 3))
+                  len(env.events("model_call")), len(env.events("tool_call")))
 
 
 def run_all() -> list[Result]:

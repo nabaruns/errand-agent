@@ -66,7 +66,7 @@ out after it had actually booked:
 route            intent=affirm pending=apv_0001 last=approval_prompt   bare "yes" right after the prompt
 approval_granted apv_0001 book QuickFix plm_02 2026-11-05T09:00 ₹750
 outbox_write     book:apv_0001:hold_00001                               intent saved before the call
-approval_check   apv_0001 authorizes book                               fingerprint checked on the exact call
+approval_check   apv_0001 authorizes book                               fingerprint re-checked
 tool_call        book(hold_00001, key) -> ERROR timeout
 book_timeout     attempt 1, checking source of truth                    no blind retry
 tool_call        get_booking_status(key, hold) -> confirmed bk_00001
