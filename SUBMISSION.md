@@ -12,7 +12,7 @@ Repo: https://github.com/nabaruns/errand-agent (private; reviewers need to be ad
 | Three real bugs with fix and regression test | [BUGS.md](BUGS.md): three featured, three more after them | Done |
 | End-to-end trace with a timeout after success | Raw: [docs/traces/timeout_after_success/](docs/traces/timeout_after_success/) (live Claude run, `run_0003.jsonl` is the booking). Annotated excerpt at the end of the design note | Done |
 | Recorded demo, 3 to 5 minutes | [youtu.be/Gp3-VMEX4_w](https://youtu.be/Gp3-VMEX4_w) (3:18, a live run against Claude). Script: [docs/DEMO_SCRIPT.md](docs/DEMO_SCRIPT.md) | Done |
-| Transcript of AI coding assistants | **To add** at `docs/transcript/` | Pending |
+| Transcript of AI coding assistants | [docs/transcript/](docs/transcript/2026-11-04-230540-plan-the-requirements.txt): the full Claude Code session, planning through submission | Done |
 
 ## Checking it in five minutes
 
