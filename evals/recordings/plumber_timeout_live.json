@@ -1,0 +1,150 @@
+{
+ "model": "claude-opus-5-5",
+ "responses": [
+  {
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "toolu_01UMP7MadMKxQz1rjGAYXq6W",
+     "name": "update_request",
+     "args": {
+      "task": "book",
+      "service": "plumber",
+      "area": "Indiranagar",
+      "date_start": "2026-11-04",
+      "date_end": "2026-11-08",
+      "earliest_time": "08:00",
+      "latest_time": "12:00",
+      "budget_max": 1500,
+      "notes": "kitchen tap"
+     }
+    },
+    {
+     "id": "toolu_01KDdf4SzUqiJoByvpqapbEd",
+     "name": "search_providers",
+     "args": {
+      "service": "plumber",
+      "area": "Indiranagar",
+      "date_range": {
+       "start": "2026-11-04",
+       "end": "2026-11-08"
+      }
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 4,
+    "output_tokens": 519,
+    "cache_read_input_tokens": 0,
+    "cache_creation_input_tokens": 3238
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "signature": "CAQSqgcKEAgTGAI4AUIIdGhpbmtpbmcSDPnbSNmxv7cUhHJBqxoMTqQyyG2J2VxKTv/sIjAU8ZOxvNzOXUzy0cMZuvf9Ca9xJN1JJ1YC12l1f56FHk5h/MxFhvp/kRbzlC6vPVMqxwajFe2Y1fJqw23XHR0jtNhEc2tkiH+QrFCP2QyxnqXaF7dXOt8uXzyyxkHARwz0lsN5kBmzCrwgFuhFnW1WhW0l9CNwWIxRZTwJO7jp1Ow/xh2mubHSDVfyW/2b7CxcJTGJub7ZGHW9cKk8l5egWX/of59NSXNyEYIwgHsuy64dwh7dsMJrvKxHpIDp5tSizWmUYC+x0tpnlJV61S5hW0n+Ik/zDoEscISHGi1XHGiDYsj8vmIKkne1fyormf6xe7gArLarsT26ZOxJCSI+ynOxVUCXfNsEJmG1c6+A1oWry4gEcLP/MJygZviD2DL/lIsLET76NJt9Y8J114LrmzI0+kUFytcG1E9cMkbyBOhk+1sexdXlelDqqBLnV/zJi4CrZOF6gKqFCytJjDqXqsletMZNmAbU30Ne/t41RTaGpHlHzL6JeUnS6+IP3hvUUWbvOHqR9F8W8bQQIkQMt3BQZrsd3llv/KodqEQKwTW/9BMYWa62w9dnoIrV3ykWByoIwswEsMtnCy9cu3rpJZetpLgZSd2rt8BQu8HBFzPEOztoK7XJFCfV+p+8WrYIupkSl4h4z2AhUosrfqctcuSDuumQEV0xBuBVdTBBNonakYwYNOjtUkCmScM0S5IEzwXVnNChIqS7f4rlxdCyQh/Ms+Sn2sM3aE4KKUezJ1bFUXVsUvpT+lmAgDVFUTbosJ5ZfkDUXSxOtV0bELpNuVwhBSAie9vJi8unAql/o1Mo1jYbRd3nZ7wfy1cAG2nWhhbXexDKqKLBrP+jmhWlq3jAOAwRRO9oufNllEif8fIdnDwrwQCByRsfSnvckfXfbNOk+lNSGnu9lwk3IxorYv69mBtgMe6gfbmi5PcnURD93lYRedOlLqS4w9eFiiCh3APSlTCxbshBbkvmf9Hu5mIMJ3I6AR90IjnvN4Ubh4C41YPOUiHVnLgYXif+E5xDKELxKOiRzELZU4WAiYe2MuKwqy6gIcJLSaaeKFkCikJEFQXFDrzTS9PMUiVCgw45Y3jqYuDQp74nfi5+g6r5y9VVtE0JS13kkNbr6IBu1EAZKuBSfGViQkWE8UsT3JVz3qOEitZIXvC5FE2vPqvBMezCKx44TmP/6hgB",
+     "thinking": "",
+     "type": "thinking"
+    },
+    {
+     "id": "toolu_01UMP7MadMKxQz1rjGAYXq6W",
+     "input": {
+      "task": "book",
+      "service": "plumber",
+      "area": "Indiranagar",
+      "date_start": "2026-11-04",
+      "date_end": "2026-11-08",
+      "earliest_time": "08:00",
+      "latest_time": "12:00",
+      "budget_max": 1500,
+      "notes": "kitchen tap"
+     },
+     "name": "update_request",
+     "type": "tool_use",
+     "caller": {
+      "type": "direct"
+     }
+    },
+    {
+     "id": "toolu_01KDdf4SzUqiJoByvpqapbEd",
+     "input": {
+      "service": "plumber",
+      "area": "Indiranagar",
+      "date_range": {
+       "start": "2026-11-04",
+       "end": "2026-11-08"
+      }
+     },
+     "name": "search_providers",
+     "type": "tool_use",
+     "caller": {
+      "type": "direct"
+     }
+    }
+   ]
+  },
+  {
+   "text": "All five plumbers are under ₹1,500 and have morning slots (8am to 12pm) between today and Sunday:\n\n- QuickFix Plumbers: ₹750, rated 4.8 (98 reviews). Not verified, 4 years' experience. Morning slots: today 11:00, Thu 9:00 and 11:00, Fri 9:00 and 11:00, Sat 9:00 and 11:00\n- Sharma Plumbing Works: ₹900, rated 4.6 (212 reviews). Verified, 12 years' experience. Morning slots: today 10:00, Thu 8:00 and 10:00, Fri 8:00 and 10:00, Sat 8:00 and 10:00\n- Bengaluru Pipe Doctors: ₹1,400, rated 4.4. Verified. Morning slots: today 11:00, Thu and Fri 9:00 and 11:00\n- TapRight Services: ₹1,100, rated 4.2. Verified. Morning slots: 11:00 only, today to Fri\n- Raju & Sons: ₹650, rated 3.9. Not verified. Morning slots: 10:00 only, today to Sat\n\nI recommend QuickFix. It has the highest rating and is one of the cheapest. If you'd prefer a verified plumber with more experience, Sharma is a close second at ₹900.\n\nWhich plumber and time would you like? I'll hold the slot and show you the confirmation.",
+   "tool_calls": [],
+   "usage": {
+    "input_tokens": 4,
+    "output_tokens": 723,
+    "cache_read_input_tokens": 3238,
+    "cache_creation_input_tokens": 3819
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "end_turn",
+   "content": [
+    {
+     "signature": "CAQS1gkKEAgTGAI4AUIIdGhpbmtpbmcSDOiPEe+58aW1WAXyLRoMKY6qLZv6tOewO2iKIjAg0Z61Qr+H/R1TDdmVBVoSONspsriWS24hQbEC9nmXDdxwB6wMdMWhzNq3QUFZ2lsq8wj447icV3EFMj45fCOeZV6TZ0zR/bTcQC09wsN9kGrl16Wlfy/VATATMQsu8L2WhswRleOtCN1453EBDyuj7ASBTHWXWLMpmqVjUuLEH3a74aL/BBDrhlPBjgnqJUVIiGTBBkFd+BdSzpXUH03Bkt12CdrOem20cyNqPoKnmSWs6fTWCPFVBuElsaZBp51GrmOhVeHROn1gF/p+cSguAljDHi4ipfpthHm0gymUu+ePJo170WUGsaRnSB5BmxRfyRgsKbKnpn86PHDo1OxSSpDlJbBsgwOXvMPyt551+4aB2ZlDDbw6A3R8av05FBI2JqackGvZhVTtqAPf9Wc0A3OrbBU8cY8U8b/ZPf6YiVtaWkUYBrodbiyXBB7+Mudq+RxT+HFxqLA/HEXz6WmwnRR2/mKxK4XpYOM7lzzzdkLs+hMRzJXqIQMbm3O5SDx/8TVuPB4AqLw+6LGfZBaYcuWsS5U/TQvFxFcGzHlRu0sS8eIITLWJ+duNAZKM+6bs4wr9UOfljE9/aTHJeEKzymRPacxndUggRatDPiXytGedBV1c//GVRb078Gu7Ixw4GuChfGAW08WcmlbPAl+tlpsW8R3NuxBSPoB0BHuZy6seffo1iSoyVpyCbGA8ARSRDDLsaLvlY0yzYQ88lVU5jY0wPhIvJR2TnLGNJInvfsJJl2BO5s5bQr2t10GV3N2+slCpB3kOucl/SSjeFH4lQUU/IJBfQayi0y7xg0sWCkPWUKLdilfckem3mw0DBX6YQWXo3EiX1OtXM/PhZqHlr2W6giw4O9trCcoJSnrouKaHJn+t0w5di4DpuM2OzPz6oFKOHnGo0zN/INcJldvl6VJ6O0MClhMTBdtU8u/u2ntp5bdpDZHoEVFiuLXJlV/JOgO6aVv3ziV31cukQGwsfX/2IcfAhUdkpbFd65yIPYmZqrCB/yAAsnbaLDY69+tSti//MrCjGd+d/XudFEtajibCmd0LlHesDk+m1z1zjEGB9oywYOVOvCnDZZDjsMHusLGTpfNLdUSeJenGvV1sTLWR9NnzRtmdRDhrln9oaSn22H7T3CzeztyHQ6fLeEMPH5bdu8m9fAPvAW50fWk1KurgaJkaBCbLroWBt7vkiSUElg/gd4PJ5YizgvyZ92rREJp+uCKg17aWzaJ6h+Cb8SQgRetlBDAAV2andsR4eZlDGRfJMjGM8uwnZrpj7HPiN3571uGUZ0pigjq+osrIxnaCsmTk2ENE6q98jjOCNxK68+A2fzemjLkjFVctrQBbOZbi0li2QrOR5qzZScUoEyL0YhKt+jnpzRcvnqSfpA/NsNL0kz0Lk0IuCnb20k9ZSxebR0dGD5phYJzNBlSa8vzBRQBv90YvuyOzmfRV3BWnh+wVoGYkdekMnaFxEnIx5HZ5mSCVHS8Xl70mxCbCbvnhY4dn5c7yEMsh1fwxSwuDvhZjjrGXmB2njRikEDwyKmfFDWcMe0QVODOtmx2VY93hyfSFuQBwPNp9RCWZRePyruQsSRgB",
+     "thinking": "",
+     "type": "thinking"
+    },
+    {
+     "text": "All five plumbers are under ₹1,500 and have morning slots (8am to 12pm) between today and Sunday:\n\n- QuickFix Plumbers: ₹750, rated 4.8 (98 reviews). Not verified, 4 years' experience. Morning slots: today 11:00, Thu 9:00 and 11:00, Fri 9:00 and 11:00, Sat 9:00 and 11:00\n- Sharma Plumbing Works: ₹900, rated 4.6 (212 reviews). Verified, 12 years' experience. Morning slots: today 10:00, Thu 8:00 and 10:00, Fri 8:00 and 10:00, Sat 8:00 and 10:00\n- Bengaluru Pipe Doctors: ₹1,400, rated 4.4. Verified. Morning slots: today 11:00, Thu and Fri 9:00 and 11:00\n- TapRight Services: ₹1,100, rated 4.2. Verified. Morning slots: 11:00 only, today to Fri\n- Raju & Sons: ₹650, rated 3.9. Not verified. Morning slots: 10:00 only, today to Sat\n\nI recommend QuickFix. It has the highest rating and is one of the cheapest. If you'd prefer a verified plumber with more experience, Sharma is a close second at ₹900.\n\nWhich plumber and time would you like? I'll hold the slot and show you the confirmation.",
+     "type": "text"
+    }
+   ]
+  },
+  {
+   "text": "",
+   "tool_calls": [
+    {
+     "id": "toolu_01W2c2ppaXZpp9AW7wpsnKtQ",
+     "name": "propose_booking",
+     "args": {
+      "provider_id": "plm_02",
+      "slot": "2026-11-04T11:00"
+     }
+    }
+   ],
+   "usage": {
+    "input_tokens": 4,
+    "output_tokens": 455,
+    "cache_read_input_tokens": 2891,
+    "cache_creation_input_tokens": 2022
+   },
+   "model": "claude-opus-5-5",
+   "stop_reason": "tool_use",
+   "content": [
+    {
+     "signature": "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",
+     "thinking": "",
+     "type": "thinking"
+    },
+    {
+     "id": "toolu_01W2c2ppaXZpp9AW7wpsnKtQ",
+     "input": {
+      "provider_id": "plm_02",
+      "slot": "2026-11-04T11:00"
+     },
+     "name": "propose_booking",
+     "type": "tool_use",
+     "caller": {
+      "type": "direct"
+     }
+    }
+   ]
+  }
+ ]
+}
